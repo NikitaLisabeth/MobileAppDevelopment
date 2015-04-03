@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">StopAfstandAndroid</string>
+    <string name="selecteer_snelheid">Selecteer uw snelheid.</string>
+    <string name="action_settings">Settings</string>
+    <string name="selecteer_reactietijd">Selecteer uw reactietijd.</string>
+    <string name="selecteer_wegtype">Selecteer het wegtype.</string>
+    <string name="wegtype_droog">Het wegdek ligt droog.</string>
+    <string name="wegtype_nat">Het wegdek ligt nat.</string>
+    <string name="bereken_stopafstand">Bereken de stopafstand</string>
+    <string name="stopafstand_is">De stopafstand is:</string>
+    <string name="stopafstand_in_meter">... meter</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="gekozen_snelheid">... km/uur</string>
+    <string name="gekozen_reactietijd">... sec</string>
+
+
+
+</resources>

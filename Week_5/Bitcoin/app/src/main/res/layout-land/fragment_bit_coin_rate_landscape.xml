@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+
+
+
+   <!-- <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="183dp"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Uw bedrag in €"
+            android:id="@+id/tvBedragInEuro"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtEuro"
+            android:layout_below="@+id/tvBedragInEuro"
+            android:layout_alignParentStart="true"
+            android:layout_alignEnd="@+id/tvBedragInEuro"
+            android:text="0 euro" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Naar Bitcoin"
+            android:id="@+id/btnNaarBitcoin"
+            android:layout_marginStart="63dp"
+            android:layout_marginTop="35dp"
+            android:layout_below="@+id/txtEuro"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Naar Euro"
+            android:id="@+id/btnNaarEuro"
+            android:layout_alignTop="@+id/btnNaarBitcoin"
+            android:layout_toEndOf="@+id/btnNaarBitcoin" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Uw bedrag in Bitcoin"
+            android:id="@+id/textView"
+            android:layout_below="@+id/btnNaarBitcoin"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="49dp"
+            android:layout_alignEnd="@+id/txtEuro" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtBitcoin"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:text="0 bitcoin" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wijzig koerst euro - bitcoin"
+            android:id="@+id/btnWijzigKoers"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignEnd="@+id/txtBitcoin" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="1 bitcoin = 100 euro"
+            android:id="@+id/textView2"
+            android:layout_above="@+id/btnWijzigKoers"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>-->
+
+
+</LinearLayout>

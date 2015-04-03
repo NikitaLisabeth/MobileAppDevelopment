@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Demo Basic Fragments</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="send_to_fragment1">Toon fragment 1</string>
+    <string name="geef_score">Geef een score op:</string>
+    <string name="score_van_student">Score van student: </string>
+    <string name="geef_naam">Geef een naam op:</string>
+    <string name="send_to_fragment2">Toon fragment 2</string>
+    <string name="naam_van_student">Naam Student: </string>
+
+</resources>

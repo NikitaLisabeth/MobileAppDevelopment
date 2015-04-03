@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Demo Android NMCT</string>
+    <string name="vraag_maand">Wat is uw favoriete maand?</string>
+    <string name="action_settings">Settings</string>
+    <string name="okantwoord">OK</string>
+    <string name="welkom_bericht">Welkom</string>
+
+</resources>
