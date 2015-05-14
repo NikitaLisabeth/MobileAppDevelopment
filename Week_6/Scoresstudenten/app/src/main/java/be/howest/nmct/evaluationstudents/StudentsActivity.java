@@ -3,6 +3,7 @@ package be.howest.nmct.evaluationstudents;
 import android.app.Activity;
 import android.app.ActionBar;
 import android.app.Fragment;
+import android.app.ListActivity;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -20,7 +21,7 @@ public class StudentsActivity extends Activity {
         setContentView(R.layout.activity_students);
         if (savedInstanceState == null) {
             getFragmentManager().beginTransaction()
-                    .add(R.id.container, new PlaceholderFragment())
+                    .add(R.id.container, new StudentFragment())
                     .commit();
         }
     }
@@ -59,7 +60,7 @@ public class StudentsActivity extends Activity {
         @Override
         public View onCreateView(LayoutInflater inflater, ViewGroup container,
                                  Bundle savedInstanceState) {
-            View rootView = inflater.inflate(R.layout.students_fragment, container, false);
+            View rootView = inflater.inflate(R.layout.fragment_student, container, false);
             return rootView;
         }
     }

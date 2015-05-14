@@ -1,0 +1,71 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
+    android:id="@+id/layout">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Uw gegevens"
+        android:id="@+id/tvUwGegevens"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/etNaam"
+        android:layout_below="@+id/tvUwGegevens"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:text="Uw naam" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/etVoornaam"
+        android:layout_below="@+id/etNaam"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/etNaam"
+        android:text="Uw voornaam" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Geboortejaar"
+        android:id="@+id/tvGeboortejaar"
+        android:layout_below="@+id/etVoornaam"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Selecteer uw geboortejaar"
+        android:id="@+id/btnSelecteerGeboortejaar"
+        android:layout_below="@+id/tvGeboortejaar"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/etVoornaam" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Selecteer uw horoscoop"
+        android:id="@+id/btnSelecteerHoroscoop"
+        android:layout_below="@+id/btnSelecteerGeboortejaar"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/btnSelecteerGeboortejaar" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imgHoroscoopImage"
+        android:layout_below="@+id/btnSelecteerHoroscoop"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>

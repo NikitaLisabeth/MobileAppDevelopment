@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Kot in Kortrijk</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="adres">straat + adres</string>
+    <string name="stad">Kortrijk</string>
+    <string name="aantalkamers">10</string>
+    <string name="labelaantalkamers">Aantal kamers:</string>
+
+</resources>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+
+    <ImageView
+        android:id="@+id/imageViewTheatre"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:padding="2dp"
+        android:src="@drawable/comedytragedy" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@+id/imageViewTheatre"
+        android:orientation="horizontal"
+        android:layout_marginLeft="4dp"
+        android:layout_marginBottom="5dp"
+        android:layout_centerVertical="true">
+
+
+        <TextView
+            android:id="@+id/tvAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Address"
+            android:textAppearance="?android:attr/textAppearanceListItemSecondary"
+            android:layout_below="@+id/tvMusical"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Theatre"
+            android:id="@+id/tvTheatre"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Musical"
+            android:id="@+id/tvMusical"
+            android:layout_below="@+id/tvTheatre"
+            android:layout_alignParentStart="true" />
+
+    </RelativeLayout>
+</RelativeLayout>
