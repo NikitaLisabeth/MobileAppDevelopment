@@ -50,6 +50,11 @@ public class StudentFragment extends ListFragment implements LoaderManager.Loade
         } catch (ClassCastException ex) {
             throw new ClassCastException(activity.toString() + " must implement OnModulesFragmentListener");
         }*/
+        try {
+            mListener = (OnStudentFragmentListener) activity;
+        } catch (ClassCastException ex) {
+            throw new ClassCastException(activity.toString() + " implement interface OnStudentFragmentListener");
+        }
     }
 
     @Override
@@ -62,6 +67,15 @@ public class StudentFragment extends ListFragment implements LoaderManager.Loade
     @Override
     public void onActivityCreated(Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
+        String[] columns = new String[]{
+                Contract.StudentColumns.COLUMN_STUDENT_NAAM,
+                Contract.StudentColumns.COLUMN_STUDNET_VOORNAAM,
+                Contract.StudentColumns.COLUMN_STUDENT_EMAIL,
+                Contract.StudentColumns.COLUMN_STUDENT_SCORE_TOTAAL};
+        int[]viewIds = new int[]{R.id.tvNaam,R.id.tvVoornaam,R.id.tvEmail,R.id.tvScore};
+        mAdapter = new StudentAdapter(getActivity(),R.layout.row_student, null,columns,viewIds,0);
+       //
+        setListAdapter(mAdapter);
         getLoaderManager().initLoader(0,null,this);
     }
 
@@ -74,7 +88,7 @@ public class StudentFragment extends ListFragment implements LoaderManager.Loade
     @Override
     public void onLoadFinished(Loader<Cursor> loader, Cursor data) {
         //loader is klaar
-        String[] columns = new String[]{
+        /*String[] columns = new String[]{
                 Contract.StudentColumns.COLUMN_STUDENT_NAAM,
                 Contract.StudentColumns.COLUMN_STUDNET_VOORNAAM,
                 Contract.StudentColumns.COLUMN_STUDENT_EMAIL,
@@ -82,7 +96,8 @@ public class StudentFragment extends ListFragment implements LoaderManager.Loade
         int[]viewIds = new int[]{R.id.tvNaam,R.id.tvVoornaam,R.id.tvEmail,R.id.tvScore};
         mAdapter = new StudentAdapter(getActivity(),R.layout.row_student, null,columns,viewIds,0);
         mAdapter.swapCursor(data);
-        setListAdapter(mAdapter);
+        setListAdapter(mAdapter);*/
+        mAdapter.swapCursor(data);
     }
 
     @Override

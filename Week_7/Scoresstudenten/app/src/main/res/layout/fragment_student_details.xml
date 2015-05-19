@@ -11,20 +11,36 @@
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="Naam"
-        android:id="@+id/tvNaam" />
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:id="@+id/tvDetailNaam" />
 
 
-    <GridView
+    <TextView
         android:layout_width="match_parent"
-        android:layout_height="420dp"
-        android:id="@+id/gridView"
-        android:layout_weight="2.15"
-        android:numColumns="2" />
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Voornaam"
+        android:layout_marginLeft="15dp"
+
+        android:id="@+id/tvDetailVoornaam" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="55dp"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="Diplomagraad"
-        android:id="@+id/tvDiplomaGraad" />
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:id="@+id/tvDetailDiplomaGraad" />
+
+    <GridView
+        android:layout_width="match_parent"
+        android:layout_height="420dp"
+        android:id="@+id/gridView"
+        android:layout_weight="2.15"
+        android:layout_marginLeft="15dp"
+        android:numColumns="2" />
+
 </LinearLayout>

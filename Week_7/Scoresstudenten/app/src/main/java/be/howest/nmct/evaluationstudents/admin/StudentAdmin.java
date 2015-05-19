@@ -39,7 +39,6 @@ public final class StudentAdmin {
     private void loadStudenten() {
 
         studenten = new ArrayList<Student>();
-
         Student s1 = new Student("stijn.walcarius@howest.be", "Stijn", "Walcarius");
         s1.voegScoreToe("Programming Skills", 6, 16);
         s1.voegScoreToe("Applied Math", 6, 15);

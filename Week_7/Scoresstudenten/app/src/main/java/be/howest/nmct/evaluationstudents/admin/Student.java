@@ -191,5 +191,77 @@ public class Student implements Comparable<Student> {
 		}
 		return uniekeNamenModules;
 	}
+    public static String getDiplomagraad(float dTotaleScore)
+    {
+        if(dTotaleScore < 5)
+        {
+            return "Niet geslaagd op onvoldoende wijze";
+        }
+        else if(dTotaleScore < 10 & dTotaleScore > 5)
+        {
+            return "Niet geslaagd";
+        }
+        else if(dTotaleScore < 12 & dTotaleScore > 10)
+        {
+            return "Geslaagd op onvoldoende wijze";
+        }
+        else if(dTotaleScore < 16 & dTotaleScore > 12)
+        {
+            return "Geslaagd op voldoende wijze";
+        }
+        else
+        {
+            return "Geslaagd met grote onderscheiding";
+        }
+    }
+
+    public enum DIPLOMAGRAAD {
+        GROOTSTE("Grootste onderscheiding",16.5f,20f,"Geslaagd met de grootste onderscheiding"),
+        GROTE("Grote onderscheiding",15f,16.5f,"Geslaagd met grote onderscheiding"),
+        ONDERSCHEIDING("Onderscheiding",13.5f,15f,"Geslaagd met onderscheiding"),
+        VOLDOENING("Voldoening",10f,13.5f,"Geslaagd op voldoende wijze"),
+        NIET_GESLAAGD("Niet geslaagd",0f,10f,"Niet geslaagd");
+
+        private String naam;
+        private float benedengrens;
+        private float bovengrens;
+        private String omschrijving;
+
+        DIPLOMAGRAAD(String naam, float benedengrens, float bovengrens, String omschrijving) {
+            this.naam = naam;
+            this.benedengrens = benedengrens;
+            this.bovengrens = bovengrens;
+            this.omschrijving = omschrijving;
+        }
+
+        public String getNaam() {
+            return naam;
+        }
+
+        public float getBenedengrens() {
+            return benedengrens;
+        }
+
+        public float getBovengrens() {
+            return bovengrens;
+        }
+
+        public String getOmschrijving() {
+            return omschrijving;
+        }
+
+        public boolean isBinnenGrenzen(float score) {
+            return score >= benedengrens && score < bovengrens;
+        }
+
+        public static DIPLOMAGRAAD getDiplomagraad(float score) {
+            for(DIPLOMAGRAAD diplomagraad : DIPLOMAGRAAD.values()) {
+                if(diplomagraad.isBinnenGrenzen(score)) return diplomagraad;
+            }
+            if (score == 20f) return DIPLOMAGRAAD.GROOTSTE;
+            return null;
+        }
+
+    }
 
 }

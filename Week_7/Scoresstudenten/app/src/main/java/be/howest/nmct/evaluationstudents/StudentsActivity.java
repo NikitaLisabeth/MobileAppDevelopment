@@ -15,7 +15,7 @@ import android.view.ViewGroup;
 import android.os.Build;
 
 
-public class StudentsActivity extends Activity {
+public class StudentsActivity extends Activity implements StudentFragment.OnStudentFragmentListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -69,7 +69,7 @@ public class StudentsActivity extends Activity {
 
     public void onSelectStudent(String email) {
 
-        FragmentManager fragmentManager = getFragmentManager();
+       /* FragmentManager fragmentManager = getFragmentManager();
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
         StudentDetailsFragment studDetailFragment = (StudentDetailsFragment) getFragmentManager().findFragmentByTag("StudentDetailsFragment");
 
@@ -77,6 +77,15 @@ public class StudentsActivity extends Activity {
         fragmentTransaction.replace(R.id.container, studDetailFragment);
 
         fragmentTransaction.addToBackStack("showfragmentStudentDetails");
+        fragmentTransaction.commit();*/
+
+        FragmentManager fragmentManager = getFragmentManager();
+        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+
+        StudentDetailsFragment fragment2 = StudentDetailsFragment.newInstance(email);
+        fragmentTransaction.replace(R.id.container, fragment2);
+
+        fragmentTransaction.addToBackStack("showDetailStudent");
         fragmentTransaction.commit();
     }
 }
