@@ -32,8 +32,8 @@ import be.howest.nmct.evaluationstudents.be.howest.nmct.evaluationsstudents.load
 public class StudentFragment extends ListFragment implements LoaderManager.LoaderCallbacks<Cursor> {
 
     private StudentAdapter mAdapter;
-
     private OnStudentFragmentListener mListener;
+
     public interface OnStudentFragmentListener {
         public void onSelectStudent(String mail);
     }
